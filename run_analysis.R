@@ -113,5 +113,5 @@ tidyData    = aggregate(finalDataNoActivityType[,names(finalDataNoActivityType) 
 tidyData    = merge(tidyData,activityType,by='activityId',all.x=TRUE);
 
 # Export the tidyData set 
-write.table(tidyData, './tidyData.txt',row.names=TRUE,sep='\t');
+write.table(tidyData, './tidyData.txt',row.name=FALSE,sep='\t');
 
